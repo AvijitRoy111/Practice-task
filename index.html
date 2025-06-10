@@ -13,6 +13,64 @@
 
 </head>
 <body>
-    <h1>hello</h1>
+        <!-- header section -->
+    <header>
+        <nav class="flex justify-between items-center bg-slate-400 px-10">
+            <h1 class="text-2xl font-extrabold text-[#EB5757]">AI UNIVERSE HUB</h1>
+            <button class="text-xl font-bold text-white bg-[#EB5757] px-6 py-3 rounded-md my-2">Search</button>
+        </nav>
+    </header>
+
+    <!-- main section  -->
+     <main>
+        <!-- main button info starts -->
+
+        <section class="mx-auto container">
+            <!-- info and button -->
+            <div class="mt-10 flex flex-col justify-center items-center gap-6">
+                <h1 class="text-4xl font-extrabold text-[#111111] text-center">AI Universe Hub</h1>
+                <button onclick="handlerButton()" class="text-xl font-medium text-white bg-[#EB5757] px-8 py-3 rounded-md">Sort By Date</button>
+            </div>
+
+
+
+
+            <!-- card section starts --> 
+
+         <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Cards will appear here -->
+        </div>
+
+
+        <!-- show detailes modals -->
+         <!-- You can open the modal using ID.showModal() method -->
+        <dialog id="show_modal_detailes" class="modal">
+       
+        </dialog>
+
+        
+
+        <!-- seee more button -->
+
+        <div id="see-more-button" class="text-center mt-10 hidden mb-20">
+            <button onclick="showMoreMedia()" class="text-xl font-bold text-white bg-[#EB5757] px-10 py-5 rounded-md">See More</button>
+        </div>
+
+
+        </section>
+
+
+
+     </main>
+
+     <!-- footer section -->
+      <footer>
+
+      </footer>
+
+
+
+      <!-- script link -->
+      <script src="js/index.js"></script>
 </body>
 </html>
